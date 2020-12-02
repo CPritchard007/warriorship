@@ -20,16 +20,17 @@ header {
   padding: 60px 0 40px 0;
   border-bottom: 6px solid black;
 }
+
 header nav ul {
   display: flex;
   list-style: none;
   justify-content: space-around;
 }
+
 header nav ul li {
   width: calc((100% / 5) - 60px);
   
 }
-
 
 header nav ul li a {
   display: block;
@@ -77,14 +78,16 @@ header nav ul li::after {
 article {
   display: flex; 
 }
+
 article figure {
 
     position: relative;
     box-sizing: border-box;
     /* background-color: red; */
-    width: 100%;
+    width: 150%;
     margin: 40px;
 }
+
 .taped::before {
     content: " ";
     position: absolute;
@@ -121,13 +124,43 @@ article figure img {
 
 article#info section {
   padding-top: 60px;
-}
-h2 {
-  margin: 10px 20px;
-  font-size: 50px;
+  
 }
 
-article section div {
+h2 {
+  margin: 10px 20px;
+  font-size: 60px;
+  display: inline-block;
+}
+
+h2 ~ p {
+  font-size: 35px;
+  color: #00000099;
+  text-indent: 90px;
+  margin: -10px 0 0 0;
+  display: inline-block;
+}
+
+p {
+  font-size: 15px;
+}
+
+p::first-line {
+  text-indent: 35px;
+}
+
+h3 {
+  font-size: 20px;
+}
+section li {
+  font-size: 20px;
+}
+
+section ul {
+  padding-left: 80px;
+}
+
+article section > div {
   /* background-color: white; */
   margin: 20px;
   padding: 10px 20px 40px 20px;
@@ -139,7 +172,8 @@ article section p {
 
 article section div h3 {
     padding-top: 10px;
-    text-indent: 30px;
+    text-indent: 0px;
+    padding-bottom: 15px;
 }
 
 article section div p + p {
@@ -183,9 +217,8 @@ footer {
 
 footer p:nth-of-type(1) {
     margin: auto 0;
-    padding-left: 30px;
     color: white;
-    background-color: indianred;
+    /* background-color: indianred; */
     width: 100%;
     display: inline-block;
     width: 80%;
@@ -194,11 +227,13 @@ footer p:nth-of-type(1) {
 }
 footer a {
     margin: auto 0;
-    text-align: center;
-    background-color: green;
+    padding: 5px;
+    text-align: right;
+    /* background-color: green; */
     width: 20%;
     display: inline-block;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
