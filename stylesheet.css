@@ -77,6 +77,13 @@ header nav ul li::after {
 
 article {
   display: flex; 
+  
+}
+article:nth-of-type(n+2) {
+  border-width: 5px 0 0 0;
+  border-color: #550000a1;
+  border-style: ridge;
+  padding: 60px 0;
 }
 
 article figure {
@@ -95,9 +102,9 @@ article figure {
     left: -5px;
     width: 100px;
     height: 30px;
-    background-color: rgba(244, 254, 255, 0.548);
+    background-color: rgba(244, 254, 255, 0.274);
     transform: translate(-25px, 5px) rotate(-40deg);
-    border: 1px solid rgb(23, 53, 99, .2);
+    border: 1px solid rgba(23, 53, 99, 0.055);
     z-index: 2;
 }
 
@@ -108,10 +115,10 @@ article figure {
     right: -5px;
     width: 100px;
     height: 30px;
-    background-color: rgba(244, 254, 255, 0.548);
+    background-color: rgba(244, 254, 255, 0.274);
     transform: translate(25px, -2px) rotate(-40deg);
-    border: 1px solid rgb(23, 53, 99, .2);
-}
+    border: 1px solid rgba(23, 53, 99, 0.055);
+  }
 
 article figure img {
   width: 100%;
@@ -149,6 +156,10 @@ p::first-line {
   text-indent: 35px;
 }
 
+article section div p + p::first-line {
+  text-indent: 0;
+}
+
 h3 {
   font-size: 20px;
 }
@@ -156,7 +167,7 @@ section li {
   font-size: 20px;
 }
 
-section ul {
+article ul {
   padding-left: 80px;
 }
 
@@ -178,9 +189,10 @@ article section div h3 {
 
 article section div p + p {
     padding-top: 20px;
+
 }
 
-article:nth-of-type(2) {
+article.dark {
     background-color: rgba(59, 59, 59);
     color: white;
     border-width: 5px 0;
@@ -199,7 +211,7 @@ article:nth-of-type(n+2) section {
     width: 100%;
     
 }
-article:nth-last-of-type(2) section div{
+article.dark section div{
     color: black;
     background-color: white;
 
