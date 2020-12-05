@@ -80,13 +80,13 @@ header nav ul li::after {
 }
 
 article {
-  display: flex; 
-  
+    display: flex; 
+    
 }
 article:nth-of-type(n+2) {
-  border-width: 5px 0 0 0;
+  /* border-width: 5px 0 0 0;
   border-color: #550000a1;
-  border-style: ridge;
+  border-style: ridge; */
   padding: 60px 0;
 }
 
@@ -95,8 +95,8 @@ article figure {
     position: relative;
     box-sizing: border-box;
     /* background-color: red; */
-    width: 150%;
-    margin: 40px;
+    width: 200%;
+    margin: auto 40px;
 }
 
 .taped::before {
@@ -155,7 +155,7 @@ h2 ~ p {
 }
 
 p {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 em {
