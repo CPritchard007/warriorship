@@ -28,11 +28,13 @@ header {
 header nav ul {
   display: flex;
   list-style: none;
-  justify-content: space-around;
+  justify-content: center;
+
 }
 
 header nav ul li {
   width: calc((100% / 5) - 60px);
+  padding: 0 10px;
   
 }
 
@@ -70,12 +72,16 @@ header nav ul li:nth-child(3) a {
 
 header nav ul li a p {  
     position: absolute;
-    top: 30px;
     width: 100%;
     font-size: 30px;
     
     
     
+}
+
+header nav ul li:nth-child(1) a p{
+  top: 30px;
+
 }
 
 header nav ul li:hover a {
